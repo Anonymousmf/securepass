@@ -19,7 +19,7 @@
             challenging it can be to manage them all. That's why we're here to make it easy for you.Create, save,
             and manage your passwords so you can easily sign in to sites and apps.</p>
         <h2>Your Passwords <span id="alert">(Copied!)</span></h2> 
-        <table>
+        <table class="table table-responsive">
             <tr>
                 <th>Website</th>
                 <th>Username</th>
@@ -52,87 +52,4 @@
     </div>
     <script src="script.js"></script>
 </body>
-
-</html><!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SecurePass - Your Password Companion!</title>
-    <link rel="stylesheet" href="style.css">
-    <style>
-        /* Add responsive CSS for small screens (e.g., Android devices) */
-        @media screen and (max-width: 600px) {
-            table {
-                width: 100%;
-                border-collapse: collapse;
-            }
-
-            table, th, td {
-                border: 1px solid #ddd;
-            }
-
-            th, td {
-                padding: 8px;
-                text-align: left;
-                font-size: 14px; /* Adjust the font size for small screens */
-            }
-
-            th {
-                background-color: #f2f2f2;
-            }
-
-            tr:nth-child(even) {
-                background-color: #f2f2f2;
-            }
-        }
-    </style>
-</head>
-
-<body>
-    <nav>
-        <div class="logo">SecurePass</div>
-    </nav>
-    <div class="container">
-        <h1>SecurePass - Your password companion!</h1>
-        <p>We're thrilled to have you here. Your digital life contains a myriad of passwords, and we know how
-            challenging it can be to manage them all. That's why we're here to make it easy for you. Create, save,
-            and manage your passwords so you can easily sign in to sites and apps.</p>
-
-        <h2>Add a Password</h2>
-        <form action="/submit" method="post">
-            <!-- Text input for website -->
-            <label for="website">Website:</label>
-            <input type="text" id="website" name="website" required>
-            <br><br>
-            <!-- Text input for username -->
-            <label for="username">Username:</label>
-            <input type="text" id="username" name="username" required>
-            <br><br>
-            <!-- Password input -->
-            <label for="password">Password:</label>
-            <input type="password" id="password" name="password" required>
-            <br>
-            <!-- Submit button -->
-            <button class="btn" type="submit">Submit</button>
-        </form>
-
-        <h2>Your Passwords <span id="alert">(Copied!)</span></h2>
-         <div style="overflow-x:auto;">
-        <table class="table table-responsive">
-           
-            <tr>
-                <th>Website</th>
-                <th>Username</th>
-                <th>Password</th>
-                <th>Delete</th>
-            </tr>
-            <!-- Add table rows here -->
-        </table>
-    </div>
-    </div>
-    <script src="script.js"></script>
-</body>
-
 </html>
