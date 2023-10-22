@@ -1,6 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,700;1,300&family=Poppins:wght@300;400;600&display=swap');
 
-* {
+*
+/* For mobile phones: */
+@media only screen and (max-width: 480px) {
+ .container {
+    width: 90%;
+    margin: 0 auto;
+ }
+}
+
+/* For tablets: */
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+ .container {
+    width: 80%;
+    margin: 0 auto;
+ }
+}
+
+/* For desktops: */
+@media only screen and (min-width: 769px) {
+ .container {
+    width: 70%;
+    margin: 0 auto;
+ }
+}
+{
     margin: 0;
     padding: 0;
     font-family: 'Noto Sans', sans-serif;
