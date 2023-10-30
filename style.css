@@ -37,6 +37,7 @@ nav {
     padding: 12px 3px;
     display: flex;
     justify-content: space-between;
+    width: auto; 
 }
 
 .logo{
