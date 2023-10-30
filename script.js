@@ -89,7 +89,7 @@ document.querySelector(".btn").addEventListener("click", (e) => {
             alert("Password Saved");
             localStorage.setItem("passwords", JSON.stringify(json));
         } else {
-            alert("Note: Password must be 8 character long with at lest one speial character,one numeric,one small case and one upper case letter (i.e Abcd@123).");
+            alert("Requirements not met.");
         }
     }
     showPasswords();
