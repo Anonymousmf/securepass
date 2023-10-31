@@ -111,3 +111,13 @@ img{
     font-size: 1rem;
     color: #4285F4;
   }
+
+  .pass-field i {
+    top: 45.5%;
+    margin-left: -20px;
+    font-size: 0.9rem;
+    color: #999;
+    cursor: pointer;
+    position: absolute;
+    transform: translateY(-50%);
+  }
