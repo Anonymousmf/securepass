@@ -98,3 +98,16 @@ img{
     display: none;
 }
 
+.requirement-list li {
+    list-style: none;
+    font-size: 0.8rem;
+}
+.requirement-list li i {
+    width: 20px;
+    color: #aaa;
+    font-size: 0.6rem;
+}
+.requirement-list li.valid i {
+    font-size: 1rem;
+    color: #4285F4;
+  }
