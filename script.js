@@ -27,7 +27,7 @@ const deletePassword = (website) => {
         return e.website !== website;
     });
     localStorage.setItem("passwords", JSON.stringify(arrUpdated));
-    alert(`Successfully deleted ${website}'s password`);
+    alert('Successfully deleted password');
     showPasswords();
 }
 
@@ -79,18 +79,14 @@ document.querySelector(".btn").addEventListener("click", (e) => {
             json.push({ website: website.value, username: username.value, password: password.value });
             alert("Password Saved");
             localStorage.setItem("passwords", JSON.stringify(json));
-        } else {
-            alert("Password does not meet the requirements.");
-        }
+        } 
     } else {
         let json = JSON.parse(localStorage.getItem("passwords"));
         if (isPasswordValid(password.value)) {
             json.push({ website: website.value, username: username.value, password: password.value });
             alert("Password Saved");
             localStorage.setItem("passwords", JSON.stringify(json));
-        } else {
-            alert("Requirements not met.");
-        }
+        } 
     }
     showPasswords();
 });
@@ -135,4 +131,3 @@ function isPasswordValid(password) {
         return false;
     }
 }
-
