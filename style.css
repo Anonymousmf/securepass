@@ -103,13 +103,15 @@ img{
  
   .content .requirement-list {
     margin-top: 0px;
+    text-align: left;
   }
   .requirement-list li {
 
     list-style: none;
     display: flex;
     align-items: center;
-   
+    font-size: 0.8rem;
+    text-align: left;
   }
   .requirement-list li i {
     width: 20px;
