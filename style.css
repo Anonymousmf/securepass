@@ -98,7 +98,15 @@ img{
 #alert{
     display: none;
 }
-
+.wrapper .content {
+  margin: 20px 0 10px;
+}
+.content p {
+  color: #333;
+  font-size: 1.3rem;
+}
+.content .requirement-list {
+  margin-top: 20px;
   
  
   .content .requirement-list {
