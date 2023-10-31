@@ -12,6 +12,31 @@
         width: 90%;
         margin: 0 auto;
     }
+
+    .logo {
+        font-size: 20px; /* Reduce logo font size for mobile */
+    }
+
+    table, td, tr, th {
+        padding: 5px 8px; /* Reduce table cell padding for mobile */
+    }
+
+    .container {
+        margin: 15px auto; /* Increase margin for better spacing */
+    }
+
+    h1, h2, h3 {
+        margin: 15px 0; /* Increase heading margin for better spacing */
+    }
+
+    .btn, .btnsm {
+        padding: 8px 15px; /* Adjust button padding for mobile */
+        font-size: 0.9rem; /* Adjust button font size for mobile */
+    }
+
+    .requirement-list li {
+        font-size: 0.7rem; /* Adjust requirement list item font size for mobile */
+    }
 }
 
 /* For tablets: */
@@ -39,11 +64,9 @@ nav {
 }
 
 .logo {
-    margin: 0 23px;
+    margin: 0 15px; /* Reduce logo margin for mobile */
     font-weight: 800;
-    font-size: 25px;
     cursor: pointer;
-    padding-left: 40px;
 }
 
 table, td, tr, th {
@@ -54,11 +77,11 @@ table, td, tr, th {
 
 .container {
     max-width: 80vw;
-    margin: 23px auto;
+    margin: 15px auto;
 }
 
 h1, h2, h3 {
-    margin: 23px 0;
+    margin: 15px 0;
 }
 
 .btn {
