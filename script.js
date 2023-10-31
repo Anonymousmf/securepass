@@ -103,11 +103,36 @@ function isPasswordValid(password) {
     const hasNumber = /[0-9]/.test(password);
     const hasSpecialCharacter = /[!@#$%^&*()_+{}[\]:;<>,.?~\\-]/.test(password);
 
-    return (
+    // Password should meet all requirements
+    if (
         password.length >= minLength &&
         hasUpperCase &&
         hasLowerCase &&
         hasNumber &&
         hasSpecialCharacter
-    );
+    ) {
+        return true;
+    } else {
+        // Provide feedback about which requirements are not met
+        let feedback = "Password requirements not met:\n";
+        if (password.length < minLength) {
+            feedback += "- Password must be at least 8 characters long.\n";
+        }
+        if (!hasUpperCase) {
+            feedback += "- Password must contain an uppercase letter.\n";
+        }
+        if (!hasLowerCase) {
+            feedback += "- Password must contain a lowercase letter.\n";
+        }
+        if (!hasNumber) {
+            feedback += "- Password must contain a number.\n";
+        }
+        if (!hasSpecialCharacter) {
+            feedback += "- Password must contain a special character.\n";
+        }
+
+        alert(feedback);
+        return false;
+    }
 }
+
