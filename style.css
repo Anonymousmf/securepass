@@ -103,7 +103,7 @@ img{
  
   .content .requirement-list {
     margin-top: 0px;
-    
+   
   }
   .requirement-list li {
 
@@ -111,12 +111,14 @@ img{
     display: flex;
     align-items: center;
     font-size: 0.8rem;
-    
+   
   }
   .requirement-list li i {
-    width: 20px;
+    width: 0;
     color: #aaa;
-    font-size: 0.6rem;
+    font-size: 0.5rem;
+    
+
   }
   .requirement-list li.valid i {
     color: #4285F4;
@@ -142,4 +144,4 @@ img{
     .requirement-list li span {
       margin-left: 7px;
     }
-  }
+  } 
