@@ -1,36 +1,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,700;1,300&family=Poppins:wght@300;400;600&display=swap');
 
-*
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans', sans-serif, 'Poppins', sans-serif;
+}
+
 /* For mobile phones: */
-@media only screen and (max-width: 480px) 
-{
- .container {
-    width: 90%;
-    margin: 0 auto;
- }
+@media only screen and (max-width: 480px) {
+    .container {
+        width: 90%;
+        margin: 0 auto;
+    }
 }
 
 /* For tablets: */
 @media only screen and (min-width: 481px) and (max-width: 768px) {
- .container {
-    width: 80%;
-    margin: 0 auto;
- }
+    .container {
+        width: 80%;
+        margin: 0 auto;
+    }
 }
 
 /* For desktops: */
 @media only screen and (min-width: 769px) {
- .container {
-    width: 70%;
-    margin: 0 auto;
- }
-}
-
-{
-    margin: 0;
-    padding: 0;
-    font-family: 'Noto Sans', sans-serif;
-    font-family: 'Poppins', sans-serif;
+    .container {
+        width: 70%;
+        margin: 0 auto;
+    }
 }
 
 nav {
@@ -39,10 +36,9 @@ nav {
     padding: 12px 3px;
     display: flex;
     justify-content: space-between;
-   
 }
 
-.logo{
+.logo {
     margin: 0 23px;
     font-weight: 800;
     font-size: 25px;
@@ -50,7 +46,7 @@ nav {
     padding-left: 40px;
 }
 
-table, td, tr,th{
+table, td, tr, th {
     border: 2px solid black;
     border-collapse: collapse;
     padding: 5px 13px;
@@ -65,7 +61,7 @@ h1, h2, h3 {
     margin: 23px 0;
 }
 
-.btn{
+.btn {
     padding: 8px 17px;
     background: black;
     color: white;
@@ -77,17 +73,17 @@ h1, h2, h3 {
     cursor: pointer;
 }
 
-.btnsm{ 
+.btnsm {
     padding: 8px 17px;
     background: black;
     color: white;
     font-weight: 900;
     border: 2px solid gray;
-    border-radius: 8px; 
+    border-radius: 8px;
     cursor: pointer;
 }
 
-img{
+img {
     cursor: pointer;
     position: relative;
     bottom: 7px;
@@ -95,51 +91,55 @@ img{
     height: 13px;
 }
 
-#alert{
+#alert {
     display: none;
 }
 
-  
- 
-  .content .requirement-list {
-    margin-top: 0px;
+.content .requirement-list {
+    margin-top: 0;
     text-align: left;
-  }
-  .requirement-list li {
+}
 
+.requirement-list li {
     list-style: none;
     display: flex;
     align-items: center;
     font-size: 0.8rem;
     text-align: left;
-  }
-  .requirement-list li i {
+}
+
+.requirement-list li i {
     width: 20px;
     color: #aaa;
     font-size: 0.6rem;
-  }
-  .requirement-list li.valid i {
+}
+
+.requirement-list li.valid i {
     color: #4285F4;
-  }
-  .requirement-list li span {
+}
+
+.requirement-list li span {
     margin-left: 12px;
     color: #333;
-  }
-  .requirement-list li.valid span {
+}
+
+.requirement-list li.valid span {
     color: #999;
-  }
-  @media screen and (max-width: 500px) {
+}
+
+@media screen and (max-width: 500px) {
     body, .wrapper {
-      padding: 15px;
+        padding: 15px;
     }
     .wrapper .pass-field {
-      height: 55px;
+        height: 55px;
     }
-    .pass-field input, .content p  {
-      font-size: 1.15rem;
+    .pass-field input,
+    .content p {
+        font-size: 1.15rem;
     }
-   
+
     .requirement-list li span {
-      margin-left: 7px;
+        margin-left: 7px;
     }
-  }
+}
