@@ -66,14 +66,17 @@ h1, h2, h3 {
 }
 
 .btn{
-    padding: 8px 17px;
-    background: black;
-    color: white;
-    font-weight: 900;
-    border: 2px solid gray;
-    border-radius: 8px;
-    margin: 4px 0;
     cursor: pointer;
+	padding: 0.5rem 1rem;
+	color: #FFF;
+	font-weight: bold;
+	text-transform: uppercase;
+	border-radius: 0.25rem;
+	background: linear-gradient(to right, #000000 25%, #1b1b1b 50%);
+	background-size: 200%;
+	background-position: 25%;
+	transition: 0.3s ease-out;
+	margin-bottom: 10px;
 }
 
 .btnsm{ 
