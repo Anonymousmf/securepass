@@ -115,12 +115,11 @@ img{
     color: #4285F4;
   }
 
-  .pass-field i {
-    top: 72.8%;
-    margin-left: -19px;
+.pass-field i {
+    
     font-size: 0.9rem;
     color: #999;
     cursor: pointer;
-    position: absolute;
-    transform: translateY(-50%);
+    position: relative;
+    left: -23px;
   }
