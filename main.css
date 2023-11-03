@@ -89,7 +89,7 @@ label {
 label span {
 	display: block;
 	flex: 1 1 0%;
-	white-space: nowrap;
+	
 }
 
 label input[type="number"] {
