@@ -94,6 +94,7 @@ label span {
 
 label input[type="number"] {
 	text-align: right;
+ margin-right: 30px;
 }
 
 button[type="submit"] {
