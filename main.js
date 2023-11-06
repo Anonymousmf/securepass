@@ -15,23 +15,34 @@ const lowercase_chars = "abcdefghijklmnopqrstuvwxyz";
 const numbers_chars = "0123456789";
 const symbols_chars = "!@#$%^&*()";
 
-function GeneratePassword () {
-	let password = "";
-	let length = length_el.value;
-	let chars = "";
+function GeneratePassword() {
+    let password = "";
+    let length = parseInt(length_el.value);
+    let chars = "";
 
-	chars += uppercase_el.checked ? uppercase_chars : "";
-	chars += lowercase_el.checked ? lowercase_chars : "";
-	chars += numbers_el.checked ? numbers_chars : "";
-	chars += symbols_el.checked ? symbols_chars : "";
+    chars += uppercase_el.checked ? uppercase_chars : "";
+    chars += lowercase_el.checked ? lowercase_chars : "";
+    chars += numbers_el.checked ? numbers_chars : "";
+    chars += symbols_el.checked ? symbols_chars : "";
 
-	for (let i = 0; i <= length; i++) {
-		let rand = Math.floor(Math.random() * chars.length);
-		password += chars.substring(rand, rand + 1);
-	}
+    // Ensure at least one character of each type
+    password += uppercase_chars.charAt(Math.floor(Math.random() * uppercase_chars.length));
+    password += lowercase_chars.charAt(Math.floor(Math.random() * lowercase_chars.length));
+    password += numbers_chars.charAt(Math.floor(Math.random() * numbers_chars.length));
+    password += symbols_chars.charAt(Math.floor(Math.random() * symbols_chars.length));
 
-	password_el.value = password;
+    // Fill the remaining length - 4 characters (as 4 characters of each type have already been added)
+    for (let i = 0; i < length - 4; i++) {
+        let rand = Math.floor(Math.random() * chars.length);
+        password += chars.substring(rand, rand + 1);
+    }
+
+    // Shuffle the generated password for better randomness
+    password = password.split('').sort(() => Math.random() - 0.5).join('');
+
+    password_el.value = password;
 }
+
 
 async function CopyPassword() {
 	if (navigator.clipboard) {
